@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fundamentos - align self</title>
+    <style>
+      .flex-container {
+        max-width: 350px;
+        border: 1px solid black;
+        display: flex;
+      }
+      .item {
+        background-color: blue;
+        color: white;
+        margin: 5px;
+      }
+      .align-container {
+        align-items: center;
+      }
+      .center {
+        align-self: center;
+      }
+      .start {
+        align-self: flex-start;
+      }
+      .end {
+        align-self: flex-end;
+      }
+      .baseline {
+        align-self: baseline;
+      }
+      .stretch {
+        align-self: stretch;
+      }
+      .auto {
+        align-self: auto;
+      }
+      .direction {
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <p>auto</p>
+    <div class="flex-container align-container">
+      <div class="item auto">A</div>
+      <div class="item auto">B</div>
+      <div class="item auto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+        excepturi praesentium doloremque delectus voluptate eos suscipit
+        cupiditate, laboriosam fuga molestias nesciunt sit! Totam, alias? Eos
+        iure nesciunt voluptas placeat quis?
+      </div>
+      <div class="item auto">D</div>
+    </div>
+    <p>mix</p>
+    <div class="flex-container">
+      <div class="item center">A</div>
+      <div class="item stretch">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quis
+        fuga in quas ducimus, nesciunt mollitia doloribus molestias omnis quidem
+        facere maiores corporis accusantium saepe nulla reprehenderit illo
+        veritatis pariatur.
+      </div>
+      <div class="item start">C</div>
+      <div class="item end">D</div>
+    </div>
+    <h1>Column</h1>
+    <p>mix</p>
+    <div class="flex-container direction">
+      <div class="item center">A</div>
+      <div class="item stretch">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quis
+        fuga in quas ducimus, nesciunt mollitia doloribus molestias omnis quidem
+        facere maiores corporis accusantium saepe nulla reprehenderit illo
+        veritatis pariatur.
+      </div>
+      <div class="item start">C</div>
+      <div class="item end">D</div>
+    </div>
+  </body>
+</html>
